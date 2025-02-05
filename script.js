@@ -113,15 +113,40 @@ document.addEventListener('DOMContentLoaded', function() {
             });
             
             if (isValid) {
+                // Get form data
+                const formData = new FormData(contactForm);
+                const data = {
+                    name: formData.get('name'),
+                    email: formData.get('email'),
+                    phone: formData.get('phone'),
+                    company: formData.get('company'),
+                    service: formData.get('service'),
+                    message: formData.get('message')
+                };
+
+                // Create mailto link
+                const subject = `Contact Form: ${data.service} Inquiry from ${data.name}`;
+                const body = `Name: ${data.name}
+Email: ${data.email}
+Phone: ${data.phone}
+Company: ${data.company}
+Service: ${data.service}
+
+Message:
+${data.message}`;
+
                 // Show loading state
                 const submitButton = contactForm.querySelector('.submit-button');
                 const originalText = submitButton.innerHTML;
                 submitButton.disabled = true;
-                submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-                
-                // Simulate form submission
+                submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Opening Email Client...';
+
+                // Open email client
+                window.location.href = `mailto:myare9812@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+                // Reset form and button
                 setTimeout(() => {
-                    submitButton.innerHTML = '<i class="fas fa-check"></i> Sent Successfully!';
+                    submitButton.innerHTML = '<i class="fas fa-check"></i> Email Client Opened!';
                     contactForm.reset();
                     
                     // Reset button after delay
@@ -129,7 +154,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         submitButton.disabled = false;
                         submitButton.innerHTML = originalText;
                     }, 2000);
-                }, 1500);
+                }, 1000);
             }
         });
     }
