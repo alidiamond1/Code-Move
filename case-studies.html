@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Case Studies - Code Move | Software Engineering Training & IT Consulting</title>
-    <meta name="description" content="Explore Code Move's success stories and client transformations through our detailed case studies in software engineering training and IT consulting.">
+    <title>Case Studies - Code Move</title>
+    <meta name="description" content="Explore Code Move's success stories and transformative projects in software engineering training and IT consulting.">
     
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -14,10 +14,14 @@
 <body>
     <!-- Header -->
     <header class="main-header">
+        <div class="overlay"></div>
         <div class="container">
             <div class="logo">
                 <h1><a href="index.html">Code Move</a></h1>
             </div>
+            <button class="mobile-menu-button" aria-label="Toggle menu" aria-expanded="false">
+                <span class="menu-icon"></span>
+            </button>
             <nav>
                 <ul>
                     <li><a href="services.html">Services</a></li>
@@ -26,32 +30,32 @@
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <a href="contact.html" class="cta-button">Get a Free Consultation</a>
+                <a href="contact.html" class="cta-button">Get a Free Consultation <i class="fas fa-arrow-right"></i></a>
             </nav>
         </div>
     </header>
 
-    <!-- Case Studies Hero Section -->
-    <section class="page-hero">
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
         <div class="container">
             <div class="hero-content animate__animated animate__fadeIn">
-                <h1>Success Stories</h1>
-                <p>Discover how we've helped organizations achieve their technology goals</p>
+                <h2>Success Stories That Drive Innovation</h2>
+                <p>Discover how we've helped businesses and individuals transform through technology</p>
             </div>
-            <div class="hero-image">
-                <img src="https://via.placeholder.com/1200x400/1a365d/ffffff?text=Client+Success+Stories" alt="Client Success Stories">
+            <div class="hero-image animate__animated animate__fadeInRight">
+                <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=1600&h=900&fit=crop" alt="Team success celebration">
             </div>
         </div>
     </section>
 
-    <!-- Case Studies Filter -->
+    <!-- Filter Section -->
     <section class="filter-section">
         <div class="container">
             <div class="filter-buttons">
                 <button class="filter-btn active" data-filter="all">All Projects</button>
-                <button class="filter-btn" data-filter="training">Training</button>
-                <button class="filter-btn" data-filter="consulting">Consulting</button>
-                <button class="filter-btn" data-filter="infrastructure">Infrastructure</button>
+                <button class="filter-btn" data-filter="training">Training Success</button>
+                <button class="filter-btn" data-filter="consulting">IT Consulting</button>
+                <button class="filter-btn" data-filter="transformation">Digital Transformation</button>
             </div>
         </div>
     </section>
@@ -59,151 +63,128 @@
     <!-- Case Studies Grid -->
     <section class="case-studies-section">
         <div class="container">
-            <!-- Training Case Study -->
-            <article class="case-study-card" data-category="training">
-                <div class="case-study-header">
-                    <img src="https://via.placeholder.com/800x400/1a365d/ffffff?text=TechStart+Academy" alt="TechStart Academy Training Program">
-                    <div class="client-logo">
-                        <img src="https://via.placeholder.com/150x150/1a365d/ffffff?text=TA" alt="TechStart Academy Logo">
+            <div class="case-studies-grid">
+                <!-- Training Success Case Study -->
+                <div class="case-study-card" data-category="training">
+                    <div class="case-study-image">
+                        <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&h=500&fit=crop" alt="Tech Academy Training">
+                        <span class="category-tag">Training Success</span>
+                    </div>
+                    <div class="case-study-content">
+                        <h2>Tech Academy Transformation</h2>
+                        <div class="client-info">
+                            <h3>Client: TechStart Academy</h3>
+                            <p class="industry">Education Technology</p>
+                        </div>
+                        <div class="case-study-details">
+                            <div class="challenge">
+                                <h4><i class="fas fa-flag"></i> Challenge</h4>
+                                <p>Needed to modernize their curriculum and improve student outcomes in web development courses.</p>
+                            </div>
+                            <div class="solution">
+                                <h4><i class="fas fa-lightbulb"></i> Solution</h4>
+                                <p>Implemented comprehensive training program with hands-on projects and mentorship.</p>
+                            </div>
+                            <div class="results">
+                                <h4><i class="fas fa-chart-line"></i> Results</h4>
+                                <ul>
+                                    <li>95% job placement rate</li>
+                                    <li>40% increase in enrollment</li>
+                                    <li>Doubled graduate starting salaries</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <blockquote>
+                            <p>"Code Move transformed our curriculum and dramatically improved our student outcomes."</p>
+                            <cite>- Sarah Chen, Director of Education</cite>
+                        </blockquote>
                     </div>
                 </div>
-                <div class="case-study-content">
-                    <h2>TechStart Academy Training Program</h2>
-                    <div class="metrics-grid">
-                        <div class="metric">
-                            <img src="https://via.placeholder.com/100x100/1a365d/ffffff?text=95%" alt="Completion Rate">
-                            <p>Completion Rate</p>
-                        </div>
-                        <div class="metric">
-                            <img src="https://via.placeholder.com/100x100/1a365d/ffffff?text=40+" alt="Certified Employees">
-                            <p>Certified Employees</p>
-                        </div>
-                        <div class="metric">
-                            <img src="https://via.placeholder.com/100x100/1a365d/ffffff?text=30%" alt="Productivity Increase">
-                            <p>Productivity Increase</p>
-                        </div>
-                    </div>
-                    <div class="case-study-details">
-                        <div class="challenge">
-                            <h3>Challenge</h3>
-                            <p>Upskilling 50+ employees in modern web development within 6 months</p>
-                        </div>
-                        <div class="solution">
-                            <h3>Solution</h3>
-                            <p>Customized training program combining intensive bootcamp with mentoring</p>
-                        </div>
-                        <div class="results">
-                            <h3>Results</h3>
-                            <ul>
-                                <li>95% completion rate</li>
-                                <li>40+ employees certified</li>
-                                <li>30% increase in team productivity</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </article>
 
-            <!-- Consulting Case Study -->
-            <article class="case-study-card" data-category="consulting">
-                <div class="case-study-header">
-                    <img src="https://via.placeholder.com/800x400/1a365d/ffffff?text=GlobalTech+Solutions" alt="GlobalTech Digital Transformation">
-                    <div class="client-logo">
-                        <img src="https://via.placeholder.com/150x150/1a365d/ffffff?text=GT" alt="GlobalTech Solutions Logo">
+                <!-- IT Consulting Case Study -->
+                <div class="case-study-card" data-category="consulting">
+                    <div class="case-study-image">
+                        <img src="https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?w=800&h=500&fit=crop" alt="Cloud Migration Project">
+                        <span class="category-tag">IT Consulting</span>
+                    </div>
+                    <div class="case-study-content">
+                        <h2>Enterprise Cloud Migration</h2>
+                        <div class="client-info">
+                            <h3>Client: GlobalTech Solutions</h3>
+                            <p class="industry">Enterprise Software</p>
+                        </div>
+                        <div class="case-study-details">
+                            <div class="challenge">
+                                <h4><i class="fas fa-flag"></i> Challenge</h4>
+                                <p>Legacy infrastructure causing performance issues and high maintenance costs.</p>
+                            </div>
+                            <div class="solution">
+                                <h4><i class="fas fa-lightbulb"></i> Solution</h4>
+                                <p>Designed and implemented comprehensive cloud migration strategy.</p>
+                            </div>
+                            <div class="results">
+                                <h4><i class="fas fa-chart-line"></i> Results</h4>
+                                <ul>
+                                    <li>60% reduction in IT costs</li>
+                                    <li>99.9% system uptime</li>
+                                    <li>3x faster deployment cycles</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <blockquote>
+                            <p>"The cloud migration exceeded our expectations in both cost savings and performance improvements."</p>
+                            <cite>- Michael Wong, CTO</cite>
+                        </blockquote>
                     </div>
                 </div>
-                <div class="case-study-content">
-                    <h2>Digital Transformation Initiative</h2>
-                    <div class="metrics-grid">
-                        <div class="metric">
-                            <img src="https://via.placeholder.com/100x100/1a365d/ffffff?text=45%" alt="Cost Reduction">
-                            <p>Cost Reduction</p>
-                        </div>
-                        <div class="metric">
-                            <img src="https://via.placeholder.com/100x100/1a365d/ffffff?text=60%" alt="Faster Deployment">
-                            <p>Faster Deployment</p>
-                        </div>
-                        <div class="metric">
-                            <img src="https://via.placeholder.com/100x100/1a365d/ffffff?text=99.9%" alt="System Uptime">
-                            <p>System Uptime</p>
-                        </div>
-                    </div>
-                    <div class="case-study-details">
-                        <div class="challenge">
-                            <h3>Challenge</h3>
-                            <p>Legacy systems causing inefficiencies and hampering growth</p>
-                        </div>
-                        <div class="solution">
-                            <h3>Solution</h3>
-                            <p>Comprehensive digital transformation with cloud migration</p>
-                        </div>
-                        <div class="results">
-                            <h3>Results</h3>
-                            <ul>
-                                <li>45% reduction in operational costs</li>
-                                <li>60% faster deployment times</li>
-                                <li>99.9% system uptime achieved</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </article>
 
-            <!-- Infrastructure Case Study -->
-            <article class="case-study-card" data-category="infrastructure">
-                <div class="case-study-header">
-                    <img src="https://via.placeholder.com/800x400/1a365d/ffffff?text=FinServ+Corporation" alt="FinServ Cloud Migration">
-                    <div class="client-logo">
-                        <img src="https://via.placeholder.com/150x150/1a365d/ffffff?text=FC" alt="FinServ Corporation Logo">
+                <!-- Digital Transformation Case Study -->
+                <div class="case-study-card" data-category="transformation">
+                    <div class="case-study-image">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=500&fit=crop" alt="Digital Transformation Project">
+                        <span class="category-tag">Digital Transformation</span>
+                    </div>
+                    <div class="case-study-content">
+                        <h2>E-Commerce Platform Modernization</h2>
+                        <div class="client-info">
+                            <h3>Client: RetailPlus</h3>
+                            <p class="industry">Retail Technology</p>
+                        </div>
+                        <div class="case-study-details">
+                            <div class="challenge">
+                                <h4><i class="fas fa-flag"></i> Challenge</h4>
+                                <p>Outdated e-commerce platform limiting growth and customer experience.</p>
+                            </div>
+                            <div class="solution">
+                                <h4><i class="fas fa-lightbulb"></i> Solution</h4>
+                                <p>Built modern, scalable e-commerce platform with advanced analytics.</p>
+                            </div>
+                            <div class="results">
+                                <h4><i class="fas fa-chart-line"></i> Results</h4>
+                                <ul>
+                                    <li>200% increase in online sales</li>
+                                    <li>50% improvement in page load times</li>
+                                    <li>30% higher customer satisfaction</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <blockquote>
+                            <p>"Our new platform has revolutionized how we serve our customers and grow our business."</p>
+                            <cite>- Emily Rodriguez, Digital Director</cite>
+                        </blockquote>
                     </div>
                 </div>
-                <div class="case-study-content">
-                    <h2>Cloud Infrastructure Modernization</h2>
-                    <div class="metrics-grid">
-                        <div class="metric">
-                            <img src="https://via.placeholder.com/100x100/1a365d/ffffff?text=0" alt="Zero Downtime">
-                            <p>Downtime During Migration</p>
-                        </div>
-                        <div class="metric">
-                            <img src="https://via.placeholder.com/100x100/1a365d/ffffff?text=50%" alt="Cost Reduction">
-                            <p>Infrastructure Costs</p>
-                        </div>
-                        <div class="metric">
-                            <img src="https://via.placeholder.com/100x100/1a365d/ffffff?text=3x" alt="Performance Improvement">
-                            <p>Performance Improvement</p>
-                        </div>
-                    </div>
-                    <div class="case-study-details">
-                        <div class="challenge">
-                            <h3>Challenge</h3>
-                            <p>Aging infrastructure causing reliability issues</p>
-                        </div>
-                        <div class="solution">
-                            <h3>Solution</h3>
-                            <p>Secure, scalable cloud infrastructure implementation</p>
-                        </div>
-                        <div class="results">
-                            <h3>Results</h3>
-                            <ul>
-                                <li>Zero downtime during migration</li>
-                                <li>50% reduction in infrastructure costs</li>
-                                <li>3x improvement in application performance</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </article>
+            </div>
         </div>
     </section>
 
     <!-- CTA Section -->
     <section class="cta-section">
         <div class="container">
-            <h2>Ready to Write Your Success Story?</h2>
-            <p>Let's discuss how we can help you achieve your technology goals.</p>
-            <div class="cta-buttons">
-                <a href="contact.html" class="cta-button">Start Your Project</a>
-                <a href="services.html" class="cta-button outline">Explore Services</a>
+            <div class="cta-content">
+                <h2>Ready to Transform Your Business?</h2>
+                <p>Let's discuss how we can help you achieve similar results.</p>
+                <a href="contact.html" class="cta-button">Schedule a Consultation <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
     </section>

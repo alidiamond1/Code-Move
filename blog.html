@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - Code Move | Software Engineering Training & IT Consulting</title>
-    <meta name="description" content="Stay updated with the latest insights in software engineering, IT consulting, and technology trends through Code Move's expert blog.">
+    <title>Blog - Code Move</title>
+    <meta name="description" content="Stay updated with the latest insights in software engineering, IT consulting, and technology trends from Code Move's expert team.">
     
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -14,10 +14,14 @@
 <body>
     <!-- Header -->
     <header class="main-header">
+        <div class="overlay"></div>
         <div class="container">
             <div class="logo">
                 <h1><a href="index.html">Code Move</a></h1>
             </div>
+            <button class="mobile-menu-button" aria-label="Toggle menu" aria-expanded="false">
+                <span class="menu-icon"></span>
+            </button>
             <nav>
                 <ul>
                     <li><a href="services.html">Services</a></li>
@@ -26,158 +30,108 @@
                     <li><a href="blog.html" class="active">Blog</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <a href="contact.html" class="cta-button">Get a Free Consultation</a>
+                <a href="contact.html" class="cta-button">Get a Free Consultation <i class="fas fa-arrow-right"></i></a>
             </nav>
         </div>
     </header>
 
-    <!-- Blog Hero Section -->
-    <section class="page-hero">
+    <!-- Blog Filters -->
+    <section class="blog-filters">
         <div class="container">
-            <div class="hero-content animate__animated animate__fadeIn">
-                <h1>Industry Insights & Expertise</h1>
-                <p>Stay updated with the latest trends in software engineering and IT consulting</p>
+            <div class="search-bar">
+                <input type="text" placeholder="Search articles...">
+                <button><i class="fas fa-search"></i></button>
             </div>
-            <div class="hero-image">
-                <img src="https://via.placeholder.com/1200x400/1a365d/ffffff?text=Tech+Insights" alt="Technology Insights">
+            <div class="category-filters">
+                <button class="category-btn active">All</button>
+                <button class="category-btn">Software Engineering</button>
+                <button class="category-btn">IT Consulting</button>
+                <button class="category-btn">Career Growth</button>
+                <button class="category-btn">Industry Trends</button>
             </div>
         </div>
     </section>
 
-    <!-- Featured Post -->
-    <section class="featured-post-section">
+    <!-- Featured Posts -->
+    <section class="featured-posts">
         <div class="container">
             <div class="featured-post">
                 <div class="post-image">
-                    <img src="https://via.placeholder.com/800x400/1a365d/ffffff?text=Featured+Article" alt="Featured Article">
-                    <span class="category-tag">Technology Trends</span>
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&h=800&fit=crop" alt="Software Development Best Practices">
+                    <span class="category-tag">Software Engineering</span>
                 </div>
                 <div class="post-content">
-                    <h2>The Future of Software Development in 2024</h2>
+                    <h3>10 Essential Software Development Best Practices for 2024</h3>
                     <div class="post-meta">
-                        <div class="author">
-                            <img src="https://via.placeholder.com/50x50/1a365d/ffffff?text=JD" alt="John Doe">
-                            <span>John Doe</span>
-                        </div>
-                        <div class="date">March 1, 2024</div>
-                        <div class="read-time">8 min read</div>
+                        <span><i class="far fa-calendar"></i> March 1, 2024</span>
+                        <span><i class="far fa-user"></i> David Chen</span>
                     </div>
-                    <p class="excerpt">Explore the emerging trends and technologies shaping the future of software development, from AI integration to low-code platforms.</p>
-                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    <p class="excerpt">Discover the most important software development practices that will shape the industry in 2024. From DevOps integration to AI-assisted coding, learn how to stay ahead of the curve.</p>
+                    <a href="#" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Blog Content -->
-    <section class="blog-content">
+    <!-- Blog Grid -->
+    <section class="blog-grid">
         <div class="container">
-            <div class="blog-grid">
-                <!-- Main Content -->
-                <div class="posts-grid">
-                    <!-- Blog Post 1 -->
-                    <article class="blog-post">
-                        <div class="post-image">
-                            <img src="https://via.placeholder.com/400x300/1a365d/ffffff?text=Cloud+Computing" alt="Cloud Computing">
-                            <span class="category-tag">Cloud</span>
+            <div class="posts-grid">
+                <!-- Blog Post 1 -->
+                <div class="blog-post">
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=500&fit=crop" alt="Cloud Computing Trends">
+                        <span class="category-tag">IT Consulting</span>
+                    </div>
+                    <div class="post-content">
+                        <h3>The Future of Cloud Computing: 2024 Trends</h3>
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar"></i> Feb 28, 2024</span>
+                            <span><i class="far fa-user"></i> Sarah Johnson</span>
                         </div>
-                        <div class="post-content">
-                            <h3>Cloud Migration Strategies for 2024</h3>
-                            <div class="post-meta">
-                                <div class="author">
-                                    <img src="https://via.placeholder.com/30x30/1a365d/ffffff?text=MC" alt="Michael Chen">
-                                    <span>Michael Chen</span>
-                                </div>
-                                <div class="date">February 28, 2024</div>
-                            </div>
-                            <p class="excerpt">Learn about the latest strategies for successful cloud migration and optimization.</p>
-                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </article>
-
-                    <!-- Blog Post 2 -->
-                    <article class="blog-post">
-                        <div class="post-image">
-                            <img src="https://via.placeholder.com/400x300/1a365d/ffffff?text=AI+Development" alt="AI Development">
-                            <span class="category-tag">AI</span>
-                        </div>
-                        <div class="post-content">
-                            <h3>Implementing AI in Modern Applications</h3>
-                            <div class="post-meta">
-                                <div class="author">
-                                    <img src="https://via.placeholder.com/30x30/1a365d/ffffff?text=SJ" alt="Sarah Johnson">
-                                    <span>Sarah Johnson</span>
-                                </div>
-                                <div class="date">February 25, 2024</div>
-                            </div>
-                            <p class="excerpt">A practical guide to integrating AI capabilities into your applications.</p>
-                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </article>
-
-                    <!-- Blog Post 3 -->
-                    <article class="blog-post">
-                        <div class="post-image">
-                            <img src="https://via.placeholder.com/400x300/1a365d/ffffff?text=DevOps" alt="DevOps Practices">
-                            <span class="category-tag">DevOps</span>
-                        </div>
-                        <div class="post-content">
-                            <h3>DevOps Best Practices for 2024</h3>
-                            <div class="post-meta">
-                                <div class="author">
-                                    <img src="https://via.placeholder.com/30x30/1a365d/ffffff?text=DR" alt="David Ross">
-                                    <span>David Ross</span>
-                                </div>
-                                <div class="date">February 22, 2024</div>
-                            </div>
-                            <p class="excerpt">Essential DevOps practices for modern software development teams.</p>
-                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </article>
+                        <p class="excerpt">Explore the latest trends in cloud computing and how they're reshaping business operations.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
 
-                <!-- Sidebar -->
-                <aside class="blog-sidebar">
-                    <!-- Categories -->
-                    <div class="sidebar-section categories">
-                        <h3>Categories</h3>
-                        <div class="category-list">
-                            <a href="#" class="category-item">
-                                <img src="https://via.placeholder.com/50x50/1a365d/ffffff?text=Dev" alt="Development">
-                                <span>Development</span>
-                            </a>
-                            <a href="#" class="category-item">
-                                <img src="https://via.placeholder.com/50x50/1a365d/ffffff?text=Cloud" alt="Cloud">
-                                <span>Cloud Computing</span>
-                            </a>
-                            <a href="#" class="category-item">
-                                <img src="https://via.placeholder.com/50x50/1a365d/ffffff?text=AI" alt="AI">
-                                <span>Artificial Intelligence</span>
-                            </a>
-                            <a href="#" class="category-item">
-                                <img src="https://via.placeholder.com/50x50/1a365d/ffffff?text=DevOps" alt="DevOps">
-                                <span>DevOps</span>
-                            </a>
-                        </div>
+                <!-- Blog Post 2 -->
+                <div class="blog-post">
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=500&fit=crop" alt="Career Growth in Tech">
+                        <span class="category-tag">Career Growth</span>
                     </div>
+                    <div class="post-content">
+                        <h3>From Junior to Senior Developer: A Career Roadmap</h3>
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar"></i> Feb 25, 2024</span>
+                            <span><i class="far fa-user"></i> Michael Roberts</span>
+                        </div>
+                        <p class="excerpt">Learn the key skills and milestones needed to advance your software engineering career.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
 
-                    <!-- Popular Posts -->
-                    <div class="sidebar-section popular-posts">
-                        <h3>Popular Posts</h3>
-                        <div class="popular-post">
-                            <img src="https://via.placeholder.com/100x100/1a365d/ffffff?text=Popular" alt="Popular Post">
-                            <div class="post-info">
-                                <h4>Getting Started with Microservices</h4>
-                                <span class="date">February 20, 2024</span>
-                            </div>
-                        </div>
+                <!-- Blog Post 3 -->
+                <div class="blog-post">
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=800&h=500&fit=crop" alt="AI in Software Development">
+                        <span class="category-tag">Industry Trends</span>
                     </div>
-                </aside>
+                    <div class="post-content">
+                        <h3>AI-Powered Development Tools: A Game Changer</h3>
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar"></i> Feb 22, 2024</span>
+                            <span><i class="far fa-user"></i> Emily Rodriguez</span>
+                        </div>
+                        <p class="excerpt">Discover how AI is revolutionizing software development workflows and productivity.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
             </div>
 
             <!-- Pagination -->
             <div class="pagination">
-                <button class="prev-page" disabled><i class="fas fa-chevron-left"></i> Previous</button>
+                <button disabled><i class="fas fa-chevron-left"></i> Previous</button>
                 <div class="page-numbers">
                     <span class="current">1</span>
                     <a href="#">2</a>
@@ -185,7 +139,7 @@
                     <span class="ellipsis">...</span>
                     <a href="#">10</a>
                 </div>
-                <button class="next-page">Next <i class="fas fa-chevron-right"></i></button>
+                <button>Next <i class="fas fa-chevron-right"></i></button>
             </div>
         </div>
     </section>
@@ -194,18 +148,13 @@
     <section class="newsletter-section">
         <div class="container">
             <div class="newsletter-content">
-                <div class="newsletter-image">
-                    <img src="https://via.placeholder.com/400x300/1a365d/ffffff?text=Stay+Updated" alt="Newsletter Signup">
-                </div>
-                <div class="newsletter-form-container">
-                    <h2>Stay Updated</h2>
-                    <p>Subscribe to our newsletter for the latest insights and updates.</p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Enter your email address" required>
-                        <button type="submit" class="cta-button">Subscribe</button>
-                    </form>
-                    <p class="privacy-notice">By subscribing, you agree to our <a href="#">Privacy Policy</a></p>
-                </div>
+                <h2>Stay Updated</h2>
+                <p>Subscribe to our newsletter for the latest insights and industry trends.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address">
+                    <button type="submit" class="cta-button">Subscribe <i class="fas fa-paper-plane"></i></button>
+                </form>
+                <p class="privacy-notice">By subscribing, you agree to our <a href="#">Privacy Policy</a></p>
             </div>
         </div>
     </section>

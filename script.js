@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const nav = document.querySelector('nav');
     const overlay = document.querySelector('.overlay');
     const menuItems = document.querySelectorAll('nav ul li');
+    const body = document.body;
 
     function toggleMenu() {
         const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
@@ -11,8 +12,13 @@ document.addEventListener('DOMContentLoaded', function() {
         mobileMenuButton.classList.toggle('active');
         nav.classList.toggle('active');
         overlay.classList.toggle('active');
-        document.body.style.overflow = isExpanded ? '' : 'hidden';
+        body.classList.toggle('menu-open');
     }
+
+    // Add animation delay to menu items
+    menuItems.forEach((item, index) => {
+        item.style.setProperty('--i', index + 1);
+    });
 
     if (mobileMenuButton && nav && overlay) {
         mobileMenuButton.addEventListener('click', toggleMenu);

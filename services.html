@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services - Code Move | Software Engineering Training & IT Consulting</title>
-    <meta name="description" content="Explore Code Move's comprehensive software engineering training programs and expert IT consulting services. Transform your career or business with our industry-leading solutions.">
+    <title>Services - Code Move</title>
+    <meta name="description" content="Explore Code Move's comprehensive software engineering training programs and expert IT consulting services.">
     
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -14,10 +14,14 @@
 <body>
     <!-- Header -->
     <header class="main-header">
+        <div class="overlay"></div>
         <div class="container">
             <div class="logo">
                 <h1><a href="index.html">Code Move</a></h1>
             </div>
+            <button class="mobile-menu-button" aria-label="Toggle menu" aria-expanded="false">
+                <span class="menu-icon"></span>
+            </button>
             <nav>
                 <ul>
                     <li><a href="services.html" class="active">Services</a></li>
@@ -26,131 +30,88 @@
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <a href="contact.html" class="cta-button">Get a Free Consultation</a>
+                <a href="contact.html" class="cta-button">Get a Free Consultation <i class="fas fa-arrow-right"></i></a>
             </nav>
         </div>
     </header>
 
-    <!-- Services Hero Section -->
-    <section class="page-hero">
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
         <div class="container">
             <div class="hero-content animate__animated animate__fadeIn">
-                <h1>Our Services</h1>
-                <p>Transform your career and business with expert training and consulting</p>
+                <h2>Transform Your Future with Expert Training & Consulting</h2>
+                <p>Comprehensive software engineering programs and strategic IT solutions tailored to your needs</p>
+                <a href="#training" class="cta-button">View Our Programs <i class="fas fa-arrow-right"></i></a>
             </div>
-            <div class="hero-image">
-                <img src="https://via.placeholder.com/1200x400/1a365d/ffffff?text=Professional+Services" alt="Professional IT Services">
-            </div>
-        </div>
-    </section>
-
-    <!-- Training Services Section -->
-    <section id="training" class="service-detail">
-        <div class="container">
-            <div class="service-content">
-                <div class="service-text">
-                    <h2>Software Engineering Training</h2>
-                    <p class="lead">Master modern software development through hands-on training and expert guidance</p>
-                    
-                    <div class="program-levels">
-                        <div class="program-card">
-                            <img src="https://via.placeholder.com/400x300/1a365d/ffffff?text=Beginner+Level" alt="Beginner Level Training">
-                            <h3>Beginner Level</h3>
-                            <ul>
-                                <li>Programming fundamentals</li>
-                                <li>Web development basics</li>
-                                <li>Version control with Git</li>
-                                <li>Basic algorithms and data structures</li>
-                            </ul>
-                            <a href="contact.html" class="cta-button">Start Learning</a>
-                        </div>
-                        
-                        <div class="program-card">
-                            <img src="https://via.placeholder.com/400x300/1a365d/ffffff?text=Intermediate+Level" alt="Intermediate Level Training">
-                            <h3>Intermediate Level</h3>
-                            <ul>
-                                <li>Advanced programming concepts</li>
-                                <li>Full-stack development</li>
-                                <li>Database design and management</li>
-                                <li>API development</li>
-                            </ul>
-                            <a href="contact.html" class="cta-button">Level Up</a>
-                        </div>
-                        
-                        <div class="program-card">
-                            <img src="https://via.placeholder.com/400x300/1a365d/ffffff?text=Advanced+Level" alt="Advanced Level Training">
-                            <h3>Advanced Level</h3>
-                            <ul>
-                                <li>System architecture</li>
-                                <li>Cloud computing</li>
-                                <li>DevOps practices</li>
-                                <li>Advanced software design patterns</li>
-                            </ul>
-                            <a href="contact.html" class="cta-button">Master Skills</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="hero-image animate__animated animate__fadeInRight">
+                <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=1600&h=900&fit=crop" alt="Software engineering training session">
             </div>
         </div>
     </section>
 
-    <!-- Instructors Section -->
-    <section class="instructors-section">
+    <!-- Training Programs Section -->
+    <section id="training" class="services-section">
         <div class="container">
-            <h2>Meet Our Expert Instructors</h2>
-            <div class="instructors-grid">
-                <div class="instructor-card">
-                    <img src="https://via.placeholder.com/200x200/1a365d/ffffff?text=DR" alt="David Ross">
-                    <h3>David Ross</h3>
-                    <p class="position">Senior Software Engineer</p>
-                    <p class="experience">15+ years experience</p>
+            <div class="section-header">
+                <h2>Software Engineering Training</h2>
+                <p>Master modern technologies through hands-on learning and expert guidance</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&h=500&fit=crop" alt="Web Development Training">
+                    <h3>Web Development Bootcamp</h3>
+                    <p>Master full-stack development with HTML, CSS, JavaScript, React, Node.js, and modern frameworks.</p>
+                    <ul class="program-features">
+                        <li><i class="fas fa-check"></i> 12-week intensive program</li>
+                        <li><i class="fas fa-check"></i> Real-world projects</li>
+                        <li><i class="fas fa-check"></i> Industry mentorship</li>
+                    </ul>
+                    <a href="contact.html" class="cta-button">Enroll Now <i class="fas fa-arrow-right"></i></a>
                 </div>
-                <div class="instructor-card">
-                    <img src="https://via.placeholder.com/200x200/1a365d/ffffff?text=AK" alt="Anna Kim">
-                    <h3>Anna Kim</h3>
-                    <p class="position">Full Stack Developer</p>
-                    <p class="experience">12+ years experience</p>
-                </div>
-                <div class="instructor-card">
-                    <img src="https://via.placeholder.com/200x200/1a365d/ffffff?text=MJ" alt="Mike Johnson">
-                    <h3>Mike Johnson</h3>
-                    <p class="position">DevOps Specialist</p>
-                    <p class="experience">10+ years experience</p>
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=800&h=500&fit=crop" alt="Mobile Development Training">
+                    <h3>Mobile App Development</h3>
+                    <p>Learn to build native and cross-platform mobile applications using React Native and Flutter.</p>
+                    <ul class="program-features">
+                        <li><i class="fas fa-check"></i> 10-week specialized course</li>
+                        <li><i class="fas fa-check"></i> App store deployment</li>
+                        <li><i class="fas fa-check"></i> Portfolio building</li>
+                    </ul>
+                    <a href="contact.html" class="cta-button">Enroll Now <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- IT Consulting Section -->
-    <section id="consulting" class="service-detail alternate">
+    <section id="consulting" class="consulting-section">
         <div class="container">
-            <div class="service-content reverse">
-                <div class="service-text">
-                    <h2>IT Consulting Services</h2>
-                    <p class="lead">Strategic technology solutions to drive your business forward</p>
-                    
-                    <div class="consulting-services">
-                        <div class="consulting-card">
-                            <img src="https://via.placeholder.com/400x300/1a365d/ffffff?text=Infrastructure" alt="Infrastructure Solutions">
-                            <h3>Infrastructure Optimization</h3>
-                            <p>Modernize your IT infrastructure for improved efficiency and scalability</p>
-                            <a href="contact.html" class="cta-button">Learn More</a>
-                        </div>
-                        
-                        <div class="consulting-card">
-                            <img src="https://via.placeholder.com/400x300/1a365d/ffffff?text=Cloud+Solutions" alt="Cloud Solutions">
-                            <h3>Cloud Migration</h3>
-                            <p>Seamless transition to cloud-based solutions with minimal disruption</p>
-                            <a href="contact.html" class="cta-button">Explore</a>
-                        </div>
-                        
-                        <div class="consulting-card">
-                            <img src="https://via.placeholder.com/400x300/1a365d/ffffff?text=Security" alt="Security Solutions">
-                            <h3>Cybersecurity Solutions</h3>
-                            <p>Protect your business with comprehensive security measures</p>
-                            <a href="contact.html" class="cta-button">Get Secure</a>
-                        </div>
-                    </div>
+            <div class="section-header">
+                <h2>IT Consulting Services</h2>
+                <p>Strategic technology solutions to drive your business forward</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=500&fit=crop" alt="IT Infrastructure Consulting">
+                    <h3>Infrastructure Optimization</h3>
+                    <p>Modernize your IT infrastructure with cloud solutions, security improvements, and performance optimization.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Cloud migration strategy</li>
+                        <li><i class="fas fa-check"></i> Security assessment</li>
+                        <li><i class="fas fa-check"></i> Performance tuning</li>
+                    </ul>
+                    <a href="contact.html" class="cta-button">Get Started <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&h=500&fit=crop" alt="Digital Transformation Consulting">
+                    <h3>Digital Transformation</h3>
+                    <p>Transform your business with custom software solutions, process automation, and digital strategy.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Process automation</li>
+                        <li><i class="fas fa-check"></i> Custom software</li>
+                        <li><i class="fas fa-check"></i> Digital strategy</li>
+                    </ul>
+                    <a href="contact.html" class="cta-button">Get Started <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -159,11 +120,10 @@
     <!-- CTA Section -->
     <section class="cta-section">
         <div class="container">
-            <h2>Ready to Transform Your Future?</h2>
-            <p>Whether you're looking to advance your career or optimize your business technology, we're here to help.</p>
-            <div class="cta-buttons">
-                <a href="contact.html" class="cta-button">Get Started</a>
-                <a href="case-studies.html" class="cta-button outline">View Success Stories</a>
+            <div class="cta-content">
+                <h2>Ready to Transform Your Future?</h2>
+                <p>Get in touch with our team to discuss your training needs or business challenges.</p>
+                <a href="contact.html" class="cta-button">Schedule a Consultation <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
     </section>
