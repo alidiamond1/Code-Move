@@ -1,0 +1,431 @@
+/* CSS Variables */
+:root {
+    --primary-color: #1a365d;
+    --secondary-color: #ffffff;
+    --accent-color: #ff6b35;
+    --text-color: #333333;
+    --light-gray: #f5f5f5;
+    --medium-gray: #e0e0e0;
+    --dark-gray: #666666;
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 4rem;
+    --border-radius: 5px;
+    --transition: all 0.3s ease;
+}
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    padding-top: 80px; /* Account for fixed header */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--spacing-sm);
+}
+
+/* Typography */
+h1, h2, h3, h4 {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: var(--spacing-md);
+}
+
+.lead {
+    font-size: 1.2rem;
+    color: var(--dark-gray);
+    margin-bottom: var(--spacing-md);
+}
+
+/* Buttons */
+.cta-button {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: var(--transition);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.cta-button:hover {
+    background-color: #e55a2b;
+    transform: translateY(-2px);
+}
+
+.cta-button.outline {
+    background-color: transparent;
+    border: 2px solid var(--accent-color);
+    color: var(--accent-color);
+}
+
+.cta-button.outline:hover {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+}
+
+/* Header */
+.main-header {
+    background-color: var(--secondary-color);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-sm) var(--spacing-md);
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.logo a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+nav ul {
+    display: none;
+    list-style: none;
+}
+
+nav ul li a {
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: var(--spacing-xs);
+    transition: var(--transition);
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: var(--accent-color);
+}
+
+/* Page Hero Section */
+.page-hero {
+    background: linear-gradient(135deg, var(--primary-color), #2a4a7f);
+    color: var(--secondary-color);
+    padding: var(--spacing-lg) 0;
+    text-align: center;
+}
+
+.page-hero h1 {
+    color: var(--secondary-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+.page-hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Service Detail Section */
+.service-detail {
+    padding: var(--spacing-lg) 0;
+}
+
+.service-detail.alternate {
+    background-color: var(--light-gray);
+}
+
+.service-content {
+    display: grid;
+    gap: var(--spacing-lg);
+    grid-template-columns: 1fr;
+}
+
+.service-text {
+    max-width: 800px;
+}
+
+.service-image img {
+    width: 100%;
+    border-radius: var(--border-radius);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Program Levels */
+.program-levels {
+    display: grid;
+    gap: var(--spacing-md);
+    grid-template-columns: 1fr;
+    margin: var(--spacing-md) 0;
+}
+
+.level-card {
+    background: var(--secondary-color);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.level-card i {
+    font-size: 2rem;
+    color: var(--accent-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+.level-card ul {
+    list-style: none;
+    margin-top: var(--spacing-sm);
+}
+
+.level-card ul li {
+    margin-bottom: var(--spacing-xs);
+    padding-left: var(--spacing-sm);
+    position: relative;
+}
+
+.level-card ul li::before {
+    content: "•";
+    color: var(--accent-color);
+    position: absolute;
+    left: 0;
+}
+
+/* Consulting Services */
+.consulting-services {
+    display: grid;
+    gap: var(--spacing-md);
+    grid-template-columns: 1fr;
+    margin: var(--spacing-md) 0;
+}
+
+.consulting-services .service-card {
+    background: var(--secondary-color);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: var(--transition);
+}
+
+.consulting-services .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.consulting-services .service-card i {
+    font-size: 2rem;
+    color: var(--accent-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+/* Process List */
+.consulting-process {
+    margin-top: var(--spacing-lg);
+}
+
+.consulting-process ol {
+    list-style: none;
+    counter-reset: process-counter;
+    margin: var(--spacing-md) 0;
+}
+
+.consulting-process ol li {
+    counter-increment: process-counter;
+    margin-bottom: var(--spacing-sm);
+    padding-left: var(--spacing-md);
+    position: relative;
+}
+
+.consulting-process ol li::before {
+    content: counter(process-counter);
+    color: var(--secondary-color);
+    background: var(--accent-color);
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+/* CTA Section */
+.cta-section {
+    background: linear-gradient(135deg, var(--primary-color), #2a4a7f);
+    color: var(--secondary-color);
+    padding: var(--spacing-lg) 0;
+    text-align: center;
+}
+
+.cta-section h2 {
+    color: var(--secondary-color);
+}
+
+.cta-buttons {
+    display: flex;
+    gap: var(--spacing-md);
+    justify-content: center;
+    margin-top: var(--spacing-md);
+}
+
+/* Footer */
+.main-footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: var(--spacing-lg) 0 var(--spacing-sm);
+}
+
+.footer-content {
+    display: grid;
+    gap: var(--spacing-md);
+    grid-template-columns: 1fr;
+}
+
+.footer-logo h3 {
+    color: var(--secondary-color);
+    margin-bottom: var(--spacing-xs);
+}
+
+.footer-links {
+    display: grid;
+    gap: var(--spacing-md);
+    grid-template-columns: 1fr;
+}
+
+.link-group h4 {
+    color: var(--secondary-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+.link-group ul {
+    list-style: none;
+}
+
+.link-group ul li {
+    margin-bottom: var(--spacing-xs);
+}
+
+.link-group a {
+    color: var(--medium-gray);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.link-group a:hover {
+    color: var(--accent-color);
+}
+
+.social-links {
+    display: flex;
+    gap: var(--spacing-sm);
+}
+
+.social-links a {
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+}
+
+.footer-bottom {
+    margin-top: var(--spacing-lg);
+    padding-top: var(--spacing-sm);
+    border-top: 1px solid rgba(255,255,255,0.1);
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    nav ul {
+        display: flex;
+        gap: var(--spacing-md);
+        align-items: center;
+    }
+
+    .program-levels,
+    .consulting-services {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .footer-links {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .service-content {
+        grid-template-columns: 3fr 2fr;
+        gap: var(--spacing-lg);
+    }
+
+    .service-content.reverse {
+        grid-template-columns: 2fr 3fr;
+    }
+
+    .service-content.reverse .service-text {
+        order: 2;
+    }
+
+    .service-content.reverse .service-image {
+        order: 1;
+    }
+
+    .program-levels,
+    .consulting-services {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Animations */
+.animate__animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
